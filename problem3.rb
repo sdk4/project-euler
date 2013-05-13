@@ -2,6 +2,7 @@
 
 def prime_factors(n)
     #Returns all the prime factors of a positive integer
+    raise ArgumentError, "n is not an Integer" if not n.is_a? Integer
     factors = []
     d = 2
     while (n > 1)
@@ -9,10 +10,10 @@ def prime_factors(n)
             factors << d
             n /= d
         end
-        d = d + 1
+        d += 1
     end
     factors
 end
 
 
-p prime_factors(600851475143).max
+p prime_factors(600851475143).last

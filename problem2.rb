@@ -1,6 +1,6 @@
 # problem 2 - even fibonacci numbers
 
-def fib(n)
+def even_fib(n)
   i,first,second = 0,0,1
   sequence = []
   while i <= n
@@ -12,4 +12,4 @@ def fib(n)
   end
   sequence
 end
-puts fib(4e6).reduce(:+)
+puts even_fib(4e6).reduce(:+)
