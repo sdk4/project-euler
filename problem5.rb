@@ -13,4 +13,4 @@ def smallest_multiple
   end
 end
 
-print smallest_multiple
+puts smallest_multiple
